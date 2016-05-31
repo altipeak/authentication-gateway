@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Safewalk authentication</title>
+</head>
+<body>
+    <p>{{ reply }}</p>
+    <form method="post">
+        <fieldset>
+            <input name="username" placeholder="username" value="{{ username }}"/>
+            <input type="password" name="password" placeholder="password"/>
+            <input type="hidden" name="destination" value="{{ destination }}"/>
+            <input type="submit" value="login"/>
+        </fieldset>
+    </form>
+</body>
+</html>
